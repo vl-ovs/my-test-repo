@@ -1,0 +1,8 @@
+FROM ubuntu:latest
+ENV DEBIAN_FRONTEND noninteractive
+# Install basics env: apache2 with PHP modules
+RUN apt-get update &&\
+    apt install apache2 libapache2-mod-php -y &&\
+    apt install php php-pear php-cgi php-common libapache2-mod-php php-mbstring php-net-socket php-gd php-xml-util php-mysql php-gettext php-bcmath -y &&\
+
+	

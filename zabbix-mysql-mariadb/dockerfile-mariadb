@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+ENV DEBIAN_FRONTEND noninteractive
+# Install basics env: MySQL-mariadb
+RUN apt-get update &&\
+    apt install mariadb-server -y
