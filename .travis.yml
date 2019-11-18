@@ -3,4 +3,6 @@ services:
   - docker
 env:
   - DOCKER_COMPOSE_VERSION=1.17.1
- 
+script:
+- docker-compose build
+- docker-compose up -d
