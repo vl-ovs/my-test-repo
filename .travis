@@ -1,0 +1,4 @@
+dist: trusty
+services:
+  - docker
+ 
