@@ -6,3 +6,8 @@ env:
 script:
 - docker-compose build
 
+deploy:
+  provider: script
+  script: bash docker_push
+  on:
+    branch: master
