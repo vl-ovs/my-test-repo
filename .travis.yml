@@ -1,4 +1,6 @@
 dist: trusty
 services:
   - docker
+env:
+  - DOCKER_COMPOSE_VERSION=1.17.1
  
