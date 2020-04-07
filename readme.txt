@@ -3,9 +3,8 @@
 
 2. В процессе поиска решения стал использовать docker-compose. В файле docker-compose.yml описал требуемые Zabbix сервисы: 
 MySQL, web-frontend-nginx, zabbix (для этого взял готовые образы из zabbix-docker. Не уверен, что это правильно, т.к. в задании 
-было ограничение на использование готовых образов для dockerfile. Но из-за нехватки опыта ручного конфигурирования dockerfiles 
-для каждого сервиса и ограниченности по времени на задание, решил использовать готовые образы.)
+было ограничение на использование готовых образов для dockerfile.
 При старте docker-compose up -d поднимает сервер Zabbix, который доступен on Localhost:80
 
 3. Репозиторий в Github синхронизировал с Travis-CI. Но конфиг .travis.yml до конца не доделал, чтобы была полностью рабочая цепочка 
-github-> Travis-CI (with docker services) -> DockerHub. Не доделал т.к. до конца не разобрался с конфигурацией в .travis.yml
+github-> Travis-CI (with docker services) -> DockerHub.
